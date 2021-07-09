@@ -1,17 +1,17 @@
 package my.demo
 
 fun main(args: Array<String>) {
-    println(args.contentToString())
-    println("hello world")
+    val rectangle = Rectangle(5.0, 5.0)
 
-    println(sum(5, 4))
+    //simple getter with templating
+    println("The perimeter is ${rectangle.perimeter}")
 
-    val logic = Logic();
+    //is automatically an instance variable and assigned in constructor
+    println("The height is ${rectangle.height}")
 
-    logic.run()
+    //we can use java classes two, in the same way if the have getters
+    val triangle = Triangle(1.0, 2.0, 3.0)
 
+    println("Side a is ${triangle.a}")
 }
 
-fun sum(a: Int, b: Int): Int {
-    return a + b
-}
