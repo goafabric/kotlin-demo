@@ -7,3 +7,5 @@
 - templating inside strings (${rectangle.perimeter}), without thinking if we use stringbuffer, strinbuilder etc...
 
 - Co Routines for threading
+
+- Perfect Support from Intellij, including Conversions ..
