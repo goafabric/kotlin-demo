@@ -5,6 +5,8 @@ package my.demo
 class Rectangle(val height: Double, private val length: Double) {
     val perimeter = calcPerimeter(height, length)
 
+    lateinit var duration : String
+
     private fun calcPerimeter (height: Double, length: Double) : Double {
         return (height + length) * 2
     }
