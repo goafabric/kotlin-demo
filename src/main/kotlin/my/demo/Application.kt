@@ -3,10 +3,11 @@ package my.demo
 fun main(args: Array<String>) {
     sugar()
     cream()
+    coffee()
 }
 
 /*** syntactic sugar ***/
-fun sugar() {
+private fun sugar() {
     //no new needed for creating instances
     val rectangle = Rectangle(5.0, 5.0)
 
@@ -22,7 +23,7 @@ fun sugar() {
 }
 
 /*** nullability and imutability ***/
-fun cream() {
+private fun cream() {
     //passing null is forbidden out of the box !
     //val rectangleNullable = Rectangle(5.0, null)
 
@@ -30,5 +31,12 @@ fun cream() {
     //rectangle.height = 5.0
 }
 
+private fun coffee() {
+    val arabica = Coffee(
+        name = "Arabica", price = 4.99);
 
+    println("Coffee Name is ${arabica.name}, Price is ${arabica.price}")
 
+    val empty = Coffee()
+    empty.name ="yo";
+}
