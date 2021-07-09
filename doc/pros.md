@@ -5,3 +5,5 @@
 - automatic FullArgsconstructor with Assignment
 
 - templating inside strings (${rectangle.perimeter}), without thinking if we use stringbuffer, strinbuilder etc...
+
+- Co Routines for threading
